@@ -11,8 +11,25 @@
     <header>
       <h1>Etch A Sketch</h1>
     </header>
-    <div class="settings"></div>
+
+    <div class="settings">
+      <div>
+        <input
+          type="range"
+          name="grid-slider"
+          id="grid-slider"
+          min="8"
+          max="50"
+          value="16"
+        />
+        <label for="grid-slider">
+          [<span id="current-grid-size">16</span>] Grid Size
+        </label>
+      </div>
+      <input type="button" value="reset grid" id="reset-grid" />
+    </div>
     <div class="container"></div>
+
     <script src="index.js"></script>
   </body>
 </html>
